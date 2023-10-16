@@ -13,8 +13,12 @@ if ('serviceWorker' in navigator) {
         }
     });
 }
+
+
 const apiKey = 'de5956d4dcc9475186995d9019602ee8';
-let url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${apiKey}`;
+var url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${apiKey}`;
+
+
 const main = document.querySelector('main');
 
 async function postNews() {
@@ -33,4 +37,11 @@ function createArticle(article) {
     </a>
     </div>
     `
+}
+
+function cliqueiBuscaplease() {
+    var busca = document.getElementById('barraPesquisa').value;
+    url = `https://newsapi.org/v2/everything?q=${busca}&apiKey=${apiKey}`;
+    postNews(); // Chama a função postNews para atualizar os resultados com base na nova pesquisa
+    console.log(busca);
 }
