@@ -32,6 +32,7 @@ main{
     grid-auto-flow: row dense;
 }
 
+
 .article{
     padding: 1rem;
     box-shadow: 3px 3px 3px 4px rgb(216, 216, 216);

@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
 
 
 const apiKey = 'de5956d4dcc9475186995d9019602ee8';
-var url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${apiKey}`;
+var url = `https://newsapi.org/v2/everything?q=nba&apiKey=${apiKey}`;
 
 
 const main = document.querySelector('main');
