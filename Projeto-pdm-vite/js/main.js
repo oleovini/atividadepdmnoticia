@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
 }
 
 
-const apiKey = 'de5956d4dcc9475186995d9019602ee8';
+const apiKey = '8c8cddc9936f49a9b886acad2671b739';
 var url = `https://newsapi.org/v2/everything?q=nba&apiKey=${apiKey}`;
 
 
@@ -52,7 +52,7 @@ function princCreate(principalnot) {
     return `
     <div class="article principal">
     <a href="${principalnot.url}" target="_blank">
-    <img src="${principalnot.urlToImage}" class="image" alt="${principalnot.content}"/>
+    <img src="${principalnot.urlToImage}" class="image princimage" alt="${principalnot.content}"/>
     <h2>${principalnot.title}</h2>
     <p>${principalnot.description}</p>
     </a>

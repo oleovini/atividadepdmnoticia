@@ -91,10 +91,16 @@ textarea:focus, input:focus, select:focus {
 
 
 .principal{
-    width: 70%;
+    width:70%;
+    height: 70vh;
     margin: auto;
     box-shadow: none;
 }
+.princimage{
+    width:60% ;
+    height: 60vh;
+}
+
 
 section{
     margin-bottom: 20px;
