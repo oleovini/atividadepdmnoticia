@@ -5,6 +5,7 @@
 }
 
 body{
+    background: #15212a;
     font-family: "Poppins";
 }
 
@@ -13,8 +14,9 @@ header{
     width: 100%;
     height: auto;
     min-height: 60px;
-    background: #5b7bbc;
+    background:#d7b89c0a;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -34,8 +36,9 @@ main{
 
 
 .article{
+    background: #f4c9a3;
     padding: 1rem;
-    box-shadow: 3px 3px 3px 4px rgb(216, 216, 216);
+    box-shadow: 3px 3px 3px 4px rgba(216, 216, 216, 0.086);
 }
 
 .article img{
@@ -60,7 +63,7 @@ main{
 margin-left: 70%;
 }
 input{
-    background-color: #b3cdff;
+    background-color: #4e433a62;
     border: none;
     padding: 5px;
 }
@@ -73,7 +76,7 @@ input{
     cursor: pointer;
     transition: .2s ease-in-out;
     color: white;
-    background: #121212;
+    background: #15212a;
 }
 .pesquisa:hover{
 background: #494949;
@@ -84,4 +87,15 @@ textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
+}
+
+
+.principal{
+    width: 70%;
+    margin: auto;
+    box-shadow: none;
+}
+
+section{
+    margin-bottom: 20px;
 }

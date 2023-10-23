@@ -8,6 +8,7 @@ if ('serviceWorker' in navigator) {
                 .register('./sw.js', {type: "module"});
             console.log('Service worker registrada! reg');
             postNews();
+            notPrinc();
         } catch (err) {
             console.log(' Service worker registro falhou:', err);
         }
@@ -20,6 +21,13 @@ var url = `https://newsapi.org/v2/everything?q=nba&apiKey=${apiKey}`;
 
 
 const main = document.querySelector('main');
+const section = document.querySelector('section');
+
+async function notPrinc() {
+    const res = await fetch(url); const data = await res.json();
+    section.innerHTML = princCreate(  data.articles[0]);
+  }
+  
 
 async function postNews() {
     const res = await fetch(url); const data = await res.json();
@@ -39,9 +47,23 @@ function createArticle(article) {
     `
 }
 
+function princCreate(principalnot) { 
+    console.log(principalnot);
+    return `
+    <div class="article principal">
+    <a href="${principalnot.url}" target="_blank">
+    <img src="${principalnot.urlToImage}" class="image" alt="${principalnot.content}"/>
+    <h2>${principalnot.title}</h2>
+    <p>${principalnot.description}</p>
+    </a>
+    </div>
+    `
+  }
+
 function cliqueiBuscaplease() {
     var busca = document.getElementById('barraPesquisa').value;
     url = `https://newsapi.org/v2/everything?q=${busca}&apiKey=${apiKey}`;
     postNews(); // Chama a função postNews para atualizar os resultados com base na nova pesquisa
+    notPrinc(); 
     console.log(busca);
-}
+}   
