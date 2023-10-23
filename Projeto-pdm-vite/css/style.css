@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body{
     background: #15212a;
     font-family: "Poppins";
+}
+.logoheader{
+    width: 60%;
 }
 
 header{
@@ -14,7 +20,7 @@ header{
     width: 100%;
     height: auto;
     min-height: 60px;
-    background:#d7b89c0a;
+    background:#d7b89c00;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -36,7 +42,7 @@ main{
 
 
 .article{
-    background: #f4c9a3;
+    background: #ddb694;
     padding: 1rem;
     box-shadow: 3px 3px 3px 4px rgba(216, 216, 216, 0.086);
 }
@@ -71,15 +77,14 @@ input{
 .pesquisa{
     margin-left: 10px;
     padding: 8px;
-    border-radius: 100px;
-    border: none;
+    border-radius: 7px;
+    border: 1px solid white;
     cursor: pointer;
     transition: .2s ease-in-out;
     color: white;
-    background: #15212a;
+    background: #0b111500;
 }
 .pesquisa:hover{
-background: #494949;
 padding: 9px;
 }
 
